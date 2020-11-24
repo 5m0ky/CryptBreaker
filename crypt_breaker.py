@@ -5,7 +5,6 @@ import crypt
 ''' Bruteforce crypt hash with salt '''
 def with_salt(filename, password):
 	''' First two characters of unix crypt hash are the salt '''
-	''' Rest of this function is the same as above '''
 	salt = password[:2]
 	with open(filename, "r") as wordlist:
 		for words in wordlist.readlines():
